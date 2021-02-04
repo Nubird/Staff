@@ -3,10 +3,14 @@
 // 程序入口文件，主要作用：导包
 import Vue from 'vue'
 import App from './App'
-import router from './router'
 import ElementUi from 'element-ui'
+// 样式文件需要单独引入
 import 'element-ui/lib/theme-chalk/index.css'
 
+//公共样式在入口文件main.js中引入
+import '@/assets/css/reset.css'
+
+import router from './router'
 Vue.config.productionTip = false
 Vue.use(ElementUi)
 
